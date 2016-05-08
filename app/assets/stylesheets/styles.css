@@ -1,0 +1,219 @@
+
+body {
+	background: white;
+	font-size: 0.7rem;
+}
+
+header {
+	padding-top: 0;
+	padding-bottom: 0;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+nav {
+	background-color: white;
+	border-top: none;
+	border-bottom: none;
+	margin-bottom: 0;
+	margin-top: 1em;
+}
+
+nav ul.inline-list-custom li {
+	font-size: 0.85rem;
+}
+
+@media only screen and (min-width: 40em) {
+
+}
+
+p {
+	font-size: 0.8125rem;
+}
+
+footer {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+button, .button {
+	font-size: 0.7rem;
+}
+
+.logo {
+	max-width: 200px;
+	margin: auto;
+	padding-left: 20px;
+}
+
+.row {
+	max-width: 60rem;
+}
+
+.item {
+	margin-top: 0.7em;
+	margin-bottom: -5em;
+}
+
+.item img {
+	max-height: 450px;
+}
+
+.gallery_item {
+	margin-top: 0.7em;
+	margin-bottom: 0.7em;
+}
+
+
+
+#grid[data-columns]::before {
+	content: '3 .column.size-1of3';
+}
+
+/* These are the classes that are going to be applied: */
+.column { float: left; }
+.size-1of3 {
+	width: 33.333%;
+	padding-left: 0.3em;
+	padding-right: 0.3em;
+	padding-top: 0.3em;
+	padding-bottom: 0.3em;
+}
+
+
+
+@media screen and (max-width: 480px){
+	#grid[data-columns]::before {
+		content: '1 .column.size-1of1';
+	}
+
+	.descripcion {
+	margin: 0.32em auto;
+	padding: 0;
+	}
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+	#grid[data-columns]::before {
+		content: '2 .column.size-1of2';
+	}
+}
+@media screen and (min-width: 769px) {
+	#grid[data-columns]::before {
+		content: '3 .column.size-1of3';
+	}
+}
+
+/* Again, you’re free to use and define the classes: */
+.column { float: left; }
+.size-1of1 { width: 100%; }
+.size-1of2 { width: 50%; }
+.size-1of3 { width: 33.333%; }
+
+
+.contenthover { padding:20px 20px 10px 20px; }
+.contenthover, .contenthover h3, .contenthover a { color:#fff; }
+.contenthover h3, .contenthover p { margin:0 0 10px 0; line-height:1.4em; padding:0; color:white;}
+
+div.lined-list ul {
+	margin: auto;
+	margin-top: 10px;
+}
+
+
+.lined-list li {
+	border-bottom: none;
+	font-size: 0.7rem;
+	text-transform: uppercase;
+	position: relative;
+	padding-top: 0;
+	padding-bottom: 0;
+	line-height: 1.3rem;
+}
+
+.lined-list li span {
+	color: gray;
+}
+
+.lined-list li:first-child {
+	border-top: none;
+}
+
+.model_info {
+	text-align: center;
+	position: relative;
+	bottom: 60px;
+	height: 60px;
+	color: white;
+	background: black;
+	opacity: 0.4;
+	line-height: 60px;
+}
+
+.model_info_hidden {
+	text-align: center;
+	position: relative;
+	bottom: 60px;
+	height: 60px;
+	background: black;
+	opacity: 0;
+	line-height: 30px;
+}
+
+.name_overlay {
+	width: 100%;
+    bottom: 60px;
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+    font-size: 1em;
+}
+
+.category_overlay {
+	color: white;
+	opacity: 1;
+	width: 100%;
+	text-transform: uppercase;
+
+}
+
+.pdf_button, .instagram_button {
+	border-bottom: none;
+}
+
+.bx-wrapper .bx-prev {
+	left: -60px !important;
+}
+
+.bx-wrapper .bx-next {
+	right: -60px !important;
+}
+
+.bx-wrapper .bxslider img {
+	max-height: 65vh;
+}
+
+.last-slide {
+	text-align: center;
+	display: table;
+	height: 674px;
+}
+
+.first-slide {
+	display: table;
+	height: 674px;
+}
+
+.descripcion {
+	padding: 0;
+	padding-left: 34%;
+	text-align: left;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.back_button {
+	display: table-cell;
+	vertical-align: middle;
+}

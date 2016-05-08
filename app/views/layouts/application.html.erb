@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Universe Management</title>
+  <%= stylesheet_link_tag    'hawthorne_type2_color3', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'baguetteBox.min', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'font-awesome.min', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'jquery.bxslider', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'styles', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'modernizr', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+<div class="row">
+	<div class="small-12 medium-12 large-12 columns">
+		<footer>
+			<ul>
+				<li>&copy; 2016 <a href="index.php">Universe Management</a>. All rights reserved.</li>
+				<li><a href="mailto:contact@universemanagement.net"><i class="fa fa-envelope-o"></i> contact@universemanagement.net</a></li>
+				
+			</ul>
+			<!-- <div class="social-icons">
+				<a href="http://www.twitter.com/universemanagement" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+				<a href="http://www.facebook.com/universemanagement" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
+				<a href="http://www.instagram.com/universemanagement" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+			</div> -->
+		</footer>
+	</div>
+</div>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'modernizr', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'hawthorne', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'salvattore.min', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'baguetteBox', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'jquery.bxslider.js', 'data-turbolinks-track' => true %>
+
+  <%= javascript_include_tag 'scripts', 'data-turbolinks-track' => true %>
+</body>
+</html>

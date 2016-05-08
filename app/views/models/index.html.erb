@@ -1,0 +1,67 @@
+<p id="notice"><%= notice %></p>
+
+<!-- <h1>Listing Models</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Altura</th>
+      <th>Calzado</th>
+      <th>Cabello</th>
+      <th>Ojos</th>
+      <th>Instagram</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @models.each do |model| %>
+      <tr>
+        <td><%= model.nombre %></td>
+        <td><%= model.altura %></td>
+        <td><%= model.calzado %></td>
+        <td><%= model.cabello %></td>
+        <td><%= model.ojos %></td>
+        <td><%= model.instagram %></td>
+        <td><%= link_to 'Show', model %></td>
+        <td><%= link_to 'Edit', edit_model_path(model) %></td>
+        <td><%= link_to 'Destroy', model, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br> -->
+
+<div class="row">
+  <div class="medium-12 columns">
+    <div id="grid" data-columns>
+      <!-- <div class="item">
+        <img src="img/icon.png" />
+      </div> -->
+      <% @models.each do |model| %>
+      <a href="">
+        <div class="item">
+        <%= attachment_image_tag(model.images.first, :file, :fill, 300, 450, format: "jpg") %>
+
+          <% if model.id == 1 %>
+          <div class="model_info">
+            <div class="category_overlay">
+              New Face
+            </div>
+          </div>
+          <% else %>
+          <div class="model_info_hidden"></div>
+          <% end %>
+          <div class="name_overlay">
+            <%= model.nombre %>
+          </div>
+        </div>
+      </a>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<%= link_to 'New Model', new_model_path %>

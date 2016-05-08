@@ -1,0 +1,42 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @model.nombre %>
+</p>
+
+<p>
+  <strong>Altura:</strong>
+  <%= @model.altura %>
+</p>
+
+<p>
+  <strong>Calzado:</strong>
+  <%= @model.calzado %>
+</p>
+
+<p>
+  <strong>Cabello:</strong>
+  <%= @model.cabello %>
+</p>
+
+<p>
+  <strong>Ojos:</strong>
+  <%= @model.ojos %>
+</p>
+
+<p>
+  <strong>Instagram:</strong>
+  <%= @model.instagram %>
+</p>
+
+<p>
+  <strong>Images:</strong>
+  <% @model.images.each do |i| %>
+    <%= attachment_image_tag(i, :file, :fill, 0, 250, format: "jpg") %>
+  <% end %>
+</p>
+
+
+<%= link_to 'Edit', edit_model_path(@model) %> |
+<%= link_to 'Back', models_path %>

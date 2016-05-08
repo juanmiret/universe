@@ -1,0 +1,50 @@
+<%= form_for(@model) do |f| %>
+  <% if @model.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@model.errors.count, "error") %> prohibited this model from being saved:</h2>
+
+      <ul>
+      <% @model.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombre %><br>
+    <%= f.text_field :nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :altura %><br>
+    <%= f.text_field :altura %>
+  </div>
+  <div class="field">
+    <%= f.label :calzado %><br>
+    <%= f.text_field :calzado %>
+  </div>
+  <div class="field">
+    <%= f.label :cabello %><br>
+    <%= f.text_field :cabello %>
+  </div>
+  <div class="field">
+    <%= f.label :ojos %><br>
+    <%= f.text_field :ojos %>
+  </div>
+  <div class="field">
+    <%= f.label :instagram %><br>
+    <%= f.text_field :instagram %>
+  </div>
+  <div class="sortable">
+  <% @model.images.each do |i| %>
+    <div class="photo" data-id="<%= i.id %>"><%= attachment_image_tag(i, :file, :fill, 0, 100, format: "jpg") %></div>
+  <% end %>
+  </div>
+  <div class="field">
+    <%= f.label :images_files %><br>
+    <%= f.attachment_field :images_files, multiple: true, presigned: true, direct: true %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
