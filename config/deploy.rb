@@ -8,7 +8,7 @@ set :repo_url, 'https://juanmiret:v360656589@github.com/juanmiret/universe.git'
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-set :deploy_to, '/home/deploy/universe'
+set :deploy_to, '/home/deploy/apps/universe'
 set :user, 'deploy'
 
 # Default value for :scm is :git

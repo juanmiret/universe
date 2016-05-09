@@ -25,5 +25,3 @@ production:
   encoding: unicode
   database: universe
   pool: 5
-  username: deploy
-  password: v360656589
